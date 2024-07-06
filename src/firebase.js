@@ -1,4 +1,5 @@
 import { initializeApp } from 'firebase/app';
+import { getFirestore, query, collection, getDocs } from 'firebase/firestore';
 
 const firebaseConfig = {
   apiKey: import.meta.env.VITE_API_KEY,
@@ -11,5 +12,19 @@ const firebaseConfig = {
 };
 
 const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
 
-export default app;
+const getJournals = async () => {
+  const q = query(collection(db, 'journals'));
+  const querySnapshot = await getDocs(q);
+
+  const journals = [];
+
+  querySnapshot.forEach((j) => {
+    const journal = j.data();
+    journals.push(journal);
+  });
+  return journals;
+};
+
+export default getJournals;
