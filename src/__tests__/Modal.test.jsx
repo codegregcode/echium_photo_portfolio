@@ -1,6 +1,12 @@
-import { render, screen, fireEvent } from '@testing-library/react';
-import '@testing-library/jest-dom';
-import { describe, it, expect, vi } from 'vitest';
+import {
+  render,
+  screen,
+  fireEvent,
+  describe,
+  it,
+  expect,
+  vi,
+} from '../setupTests';
 import Modal from '../components/Modal';
 
 describe('Modal', () => {

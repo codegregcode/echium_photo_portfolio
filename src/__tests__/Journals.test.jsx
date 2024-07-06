@@ -1,7 +1,5 @@
-import { render, waitFor } from '@testing-library/react';
-import { BrowserRouter as Router } from 'react-router-dom';
-import { describe, it, expect, vi } from 'vitest';
-import '@testing-library/jest-dom';
+import { waitFor, render, Router, describe, it, expect } from '../setupTests';
+import { vi } from 'vitest';
 import Journals from '../components/Journals';
 
 import getJournals from '../firebase';

@@ -1,6 +1,4 @@
-import { render, screen } from '@testing-library/react';
-import '@testing-library/jest-dom';
-import { describe, it, expect } from 'vitest';
+import { render, screen, describe, it, expect } from '../setupTests';
 import Index from '../components/Index';
 
 describe('Index', () => {

@@ -1,7 +1,4 @@
-import { render } from '@testing-library/react';
-import '@testing-library/jest-dom';
-import { BrowserRouter } from 'react-router-dom';
-import { describe, it, expect } from 'vitest';
+import { render, BrowserRouter, describe, it, expect } from '../setupTests';
 import App from '../components/App';
 
 describe('App component', () => {
