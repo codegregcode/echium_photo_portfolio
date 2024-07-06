@@ -1,0 +1,61 @@
+.welcome-component {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 80vh;
+  padding: 10px;
+}
+
+.welcome-container {
+  position: relative;
+  text-align: center;
+  animation: fadeIn 5s;
+  box-shadow: rgba(249, 241, 241, 0.12) 0px -20px 30px,
+    rgba(249, 241, 241, 0.12) 0px 4px 6px,
+    rgba(249, 241, 241, 0.17) 0px 12px 13px,
+    rgba(249, 241, 241, 0.09) 0px -3px 5px;
+  width: 100%;
+  max-width: 900px;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.welcome-text {
+  position: absolute;
+  top: 52px;
+  left: 132px;
+  font-size: 90px;
+  color: white;
+  background-color: transparent;
+  mix-blend-mode: difference;
+}
+
+.welcome-background {
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  animation-name: imgShadow;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-direction: forward;
+}
+
+@media (max-width: 768px) {
+  .welcome-text {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    font-size: 35px;
+    color: white;
+    background-color: transparent;
+    mix-blend-mode: difference;
+  }
+}

@@ -1,0 +1,52 @@
+.journal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid white;
+  width: 370px;
+  height: 363px;
+  background-color: rgb(249, 241, 241);
+  margin: 5px;
+  overflow: hidden;
+  padding: 10px;
+}
+
+.journal:hover {
+  cursor: pointer;
+  box-shadow: rgba(249, 241, 241, 0.25) 5px 15px 18px;
+}
+
+.journal img {
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  background-color: rgb(249, 241, 241);
+  margin-bottom: 10px;
+}
+
+.journal h5 {
+  background-color: rgb(249, 241, 241);
+  color: rgb(155, 106, 108);
+  margin-top: auto;
+}
+
+.journal p {
+  font-size: smaller;
+  background-color: rgb(234, 244, 211);
+  color: rgb(155, 106, 108);
+}
+
+@media (max-width: 400px) {
+  .journal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid white;
+    width: 259px;
+    height: 254.1px;
+    background-color: rgb(249, 241, 241);
+    margin: 5px;
+    overflow: hidden;
+    padding: 10px;
+  }
+}
