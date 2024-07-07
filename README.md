@@ -4,7 +4,7 @@ This is a photo journal that I've made using React, Yet Another React Lightbox a
 
 ## Usage
 
-To use/view the website follow this link
+To use/view the website follow this [link](https://echium.photo/)
 
 ## Installation
 
