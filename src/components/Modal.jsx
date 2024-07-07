@@ -24,6 +24,7 @@ const Modal = ({ isOpen, onClose, children }) => {
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
+        overflow: 'scroll',
       }}
       role="button"
     >
