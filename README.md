@@ -10,7 +10,7 @@ To use/view the website follow this [link](https://echium.photo/)
 
 If you would like to clone this repo onto your own machine to create your own photo journal, please follow the instructions below. And if you want to continue using Firebase as a backend, then you'll need to setup your own Firebase project with a Firestore database (with its own rules). You will also need to create a .env at the root of the project with your Firebase project's keys etc.
 
-1. Clone the repo `git clone https://link.to/project`
+1. Clone the repo `git clone https://github.com/codegregcode/echium_photo_portfolio`
 2. Navigate to the project directory `cd echium_photo_portfolio`
 3. Install the dependencies `npm install`
 
