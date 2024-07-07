@@ -32,7 +32,7 @@ const Modal = ({ isOpen, onClose, children }) => {
         style={{
           background: 'rgba(0, 0, 0, 0.4)',
           height: 'fit-content',
-          width: 240,
+          width: 300,
           margin: 'auto',
           padding: '2%',
           border: '2px solid #000',
