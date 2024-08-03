@@ -132,6 +132,56 @@ const apr27 = [
     alt: 'Structures',
     src: 'https://i.ibb.co/PmxsG3b/430299520007.jpg',
   },
+  {
+    caption: 'Fire Flower',
+    alt: 'Fire Flower',
+    src: 'https://i.ibb.co/xhMPDqk/793039480008dup.jpg',
+  },
+  {
+    caption: 'So many steps',
+    alt: 'So Many Steps',
+    src: 'https://i.ibb.co/mS0Rqnd/793039480011dup.jpg',
+  },
+  {
+    caption: 'Looking up at Ponte Luís I',
+    alt: 'Looking up at Ponte Luís I',
+    src: 'https://i.ibb.co/1rcLkXW/793039480010dup.jpg',
+  },
+  {
+    caption: '(not) a rabbit',
+    alt: '(not) a rabbit',
+    src: 'https://i.ibb.co/DQSYjQT/793039480036dup.jpg',
+  },
+  {
+    caption: '(not) a duck',
+    alt: '(not) a duck',
+    src: 'https://i.ibb.co/89NfBw1/793039480022dup.jpg',
+  },
+  {
+    caption: '(not) a cat',
+    alt: '(not) a cat',
+    src: 'https://i.ibb.co/WfFLx7g/793039480021dup.jpg',
+  },
+  {
+    caption: 'Yet another peacock',
+    alt: 'Yet another peacock',
+    src: 'https://i.ibb.co/RpzNYDr/793039500023dup.jpg',
+  },
+  {
+    caption: 'Peacock',
+    alt: 'Peacock',
+    src: 'https://i.ibb.co/XzBfNhm/793039500021dup.jpg',
+  },
+  {
+    caption: 'Another peacock',
+    alt: 'Another peacock',
+    src: 'https://i.ibb.co/FbwJtwC/793039500022dup.jpg',
+  },
+  {
+    caption: 'Peacock group hang under the tree, chillin',
+    alt: 'Peacock group hang under the tree, chillin',
+    src: 'https://i.ibb.co/9gDQ1CR/793039500026dup.jpg',
+  },
 ];
 
 export { mar17, apr27 };
