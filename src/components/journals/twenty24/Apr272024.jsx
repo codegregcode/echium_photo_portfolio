@@ -61,7 +61,7 @@ function Apr272024() {
         </p>
         <p>
           Flying was exciting! Well, more exciting than a ferry, which was the
-          method of transit the last time I went abroad. After the initial
+          method of transit the last time I went abroad. But, after the initial
           excitement of taking off, the dullness of cruising sets in over 2
           hours, and I had forgot to bring my headphones...
         </p>
