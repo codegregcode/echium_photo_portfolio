@@ -242,4 +242,123 @@ const may = [
   },
 ];
 
-export { mar17, apr27, may };
+const mansionOfSnakes = [
+  {
+    caption: 'Vocal take 1',
+    alt: 'Vocal take 1',
+    src: 'https://i.ibb.co/6YRTTGC/203000010030.jpg',
+  },
+  {
+    caption: 'Vocal take 2',
+    alt: 'Vocal take 2',
+    src: 'https://i.ibb.co/WHYHhLT/203000010029.jpg',
+  },
+  {
+    caption: 'Knob twiddler',
+    alt: 'Knob twiddler',
+    src: 'https://i.ibb.co/8sZH54n/203000010020.jpg',
+  },
+  {
+    caption: 'Shekere take',
+    alt: 'Shekere take',
+    src: 'https://i.ibb.co/kKfydvZ/203000010019.jpg',
+  },
+  {
+    caption: 'Conga take',
+    alt: 'Conga take',
+    src: 'https://i.ibb.co/txMnysD/203000010017.jpg',
+  },
+  {
+    caption: 'Recording/producing',
+    alt: 'Recording/producing',
+    src: 'https://i.ibb.co/6szvXTY/203000010010.jpg',
+  },
+  {
+    caption: 'In the mix',
+    alt: 'In the mix',
+    src: 'https://i.ibb.co/QvPRLrL/203000010004.jpg',
+  },
+  {
+    caption: 'Listening back',
+    alt: 'Listening back',
+    src: 'https://i.ibb.co/S7W61tq/203000010001.jpg',
+  },
+];
+
+const juneSnapShots = [
+  {
+    caption: 'Tree monster',
+    alt: 'Tree monster',
+    src: 'https://i.ibb.co/BBC09ZV/203000040017.jpg',
+  },
+  {
+    caption: 'What time is it? Look up!',
+    alt: 'What time is it? Look up! - Leeds Town Hall',
+    src: 'https://i.ibb.co/d79BXN8/203000040022.jpg',
+  },
+  {
+    caption: 'Behind Leeds Town Hall',
+    alt: 'Behind Leeds Town Hall',
+    src: 'https://i.ibb.co/3CH4yZz/203000040012.jpg',
+  },
+];
+
+const restOfJunePhotos = [
+  {
+    caption: 'One sheep, two sheep, three sheep...zzz',
+    alt: 'One sheep, two sheep, three sheep...zzz',
+    src: 'https://i.ibb.co/NL1m5XT/203000020002.jpg',
+  },
+  {
+    caption: 'Clouds & wall',
+    alt: 'Clouds & wall',
+    src: 'https://i.ibb.co/3dsfzx4/203000020014.jpg',
+  },
+  {
+    caption: 'Gateway',
+    alt: 'Gateway',
+    src: 'https://i.ibb.co/YTHbCPZ/203000020015.jpg',
+  },
+  {
+    caption: 'Hardraw Force',
+    alt: 'Hardraw Force',
+    src: 'https://i.ibb.co/W0z6kTY/203000020017.jpg',
+  },
+  {
+    caption: 'Clouds over Coniston (Lake)',
+    alt: 'Clouds over Coniston (Lake)',
+    src: 'https://i.ibb.co/myVh4Tr/203000020019.jpg',
+  },
+  {
+    caption: 'Boat bow',
+    alt: 'Boat bow',
+    src: 'https://i.ibb.co/2WkSJ3G/203000030025.jpg',
+  },
+  {
+    caption: 'In the wake',
+    alt: 'In the wake',
+    src: 'https://i.ibb.co/pP0ZX8n/203000030024.jpg',
+  },
+  {
+    caption: 'Water taxi',
+    alt: 'Water taxi',
+    src: 'https://i.ibb.co/r00Ntws/203000030026.jpg',
+  },
+  {
+    caption: 'Another boat bow',
+    alt: 'Another boat bow',
+    src: 'https://i.ibb.co/k0JJBNS/203000030027.jpg',
+  },
+  {
+    caption: 'Dragonboat bow flying over the water',
+    alt: 'Dragonboat bow flying over the water',
+    src: 'https://i.ibb.co/yQjHNh6/203000030009.jpg',
+  },
+  {
+    caption: 'Dragonboat race at Leeds dock',
+    alt: 'Dragonboat race at Leeds dock',
+    src: 'https://i.ibb.co/SdvB4fs/203000030002.jpg',
+  },
+];
+
+export { mar17, apr27, may, mansionOfSnakes, juneSnapShots, restOfJunePhotos };
