@@ -25,7 +25,7 @@ exports[`App component > matches the snapshot 1`] = `
             <img
               alt="Welcome Image - Click Me"
               class="welcome-background"
-              src="https://i.ibb.co/rphBVTG/430299530011.jpg"
+              src="https://res.cloudinary.com/dfacllhgp/image/upload/v1722867682/430299530011_mdrw8l.jpg"
               title="click me"
             />
           </div>
