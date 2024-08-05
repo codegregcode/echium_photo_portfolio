@@ -1,6 +1,6 @@
 # echium_photo_portfolio
 
-This is a photo journal that I've made using React, Yet Another React Lightbox and Firebase. The project setup also includes essential tools for development, testing and linting to ensure the best performance and the highest code quality.
+This is a photo journal that I've made using React, Yet Another React Lightbox and Firebase.
 
 ## Usage
 
@@ -32,6 +32,8 @@ There are a number of scripts to use in the project
 - `react-dom` ^18.3.1
 - `react-router-dom` ^6.24.0
 - `yet-another-react-lightbox` ^3.20.2
+- `@react-spring/web` ^9.7.4
+- `react-toastify` ^10.0.5
 
 ### Development Dependencies
 
