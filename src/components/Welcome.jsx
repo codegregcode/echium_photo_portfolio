@@ -8,7 +8,7 @@ function Welcome() {
         <div className="welcome-container">
           <h1 className="welcome-text">echium_photo</h1>
           <img
-            src="https://i.ibb.co/rphBVTG/430299530011.jpg"
+            src="https://res.cloudinary.com/dfacllhgp/image/upload/v1722867682/430299530011_mdrw8l.jpg"
             className="welcome-background"
             title="click me"
             alt="Welcome Image - Click Me"
