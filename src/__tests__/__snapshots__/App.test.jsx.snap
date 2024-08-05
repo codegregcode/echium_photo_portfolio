@@ -32,11 +32,6 @@ exports[`App component > matches the snapshot 1`] = `
         </a>
       </div>
     </div>
-    <p
-      class="footer"
-    >
-      Copyright 2024 Greg Cain
-    </p>
   </div>
 </DocumentFragment>
 `;
