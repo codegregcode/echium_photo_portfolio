@@ -24,7 +24,10 @@ function App() {
           <Route path="/index/starting-to-develop" element={<Jun2024 />} />
         </Routes>
       </div>
-      <Footer />
+      {sessionStorage.getItem('show_landing_animation') === '1' &&
+      sessionStorage.getItem('show_journal_animation') === '1' ? (
+        <Footer />
+      ) : null}
     </div>
   );
 }
