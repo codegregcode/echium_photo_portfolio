@@ -6,6 +6,9 @@ exports[`App component > matches the snapshot 1`] = `
     class="app-container"
   >
     <div
+      class="Toastify"
+    />
+    <div
       class="content"
     >
       <div

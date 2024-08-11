@@ -1,4 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
+import { ToastContainer } from 'react-toastify';
 
 import Welcome from './Welcome';
 import Index from './Index';
@@ -10,10 +11,12 @@ import May2024 from './journals/twenty24/May2024';
 import Jun2024 from './journals/twenty24/Jun2024';
 
 import '../styles/App.css';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   return (
     <div className="app-container">
+      <ToastContainer />
       <div className="content">
         <Routes>
           <Route path="/" element={<Welcome />} />

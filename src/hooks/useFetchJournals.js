@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { toast } from 'react-toastify';
 import getJournals from '../firebase';
 
 const useFetchJournals = () => {
@@ -11,7 +12,7 @@ const useFetchJournals = () => {
         journalsData.sort((a, b) => new Date(b.date) - new Date(a.date));
         setJournals(journalsData);
       } catch (error) {
-        console.error(error.message);
+        toast.error(error.message);
       }
     };
     fetchJournals();
