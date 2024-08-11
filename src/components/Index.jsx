@@ -1,54 +1,11 @@
-import { useSpring, animated } from '@react-spring/web';
+import { animated } from '@react-spring/web';
 import useAnimation from '../hooks/useAnimation';
 import Journals from './Journals';
+
 import '../styles/IndexPage.css';
 
 function Index() {
-  const showAnimation =
-    sessionStorage.getItem('show_landing_animation') !== '1';
-  const isVisible = useAnimation();
-
-  const props1 = useSpring({
-    opacity: isVisible ? 1 : 0,
-    transform: isVisible ? 'translateY(0px)' : 'translateY(-100px)',
-    config: { tension: 400, friction: 20 },
-    delay: showAnimation ? 800 : 0,
-    immediate: !showAnimation,
-  });
-
-  const props2 = useSpring({
-    opacity: isVisible ? 1 : 0,
-    transform: isVisible ? 'translateX(0px)' : 'translateX(-100px)',
-    config: { tension: 400, friction: 20 },
-    delay: showAnimation ? 1600 : 0,
-    immediate: !showAnimation,
-  });
-
-  const props3 = useSpring({
-    opacity: isVisible ? 1 : 0,
-    transform: isVisible ? 'translateY(0px)' : 'translateY(100px)',
-    config: { tension: 400, friction: 20 },
-    delay: showAnimation ? 2400 : 0,
-    immediate: !showAnimation,
-  });
-
-  const props4 = useSpring({
-    opacity: isVisible ? 1 : 0,
-    transform: isVisible ? 'translateX(0px)' : 'translateX(100px)',
-    fontSize: 10,
-    config: { tension: 400, friction: 20 },
-    delay: showAnimation ? 3200 : 0,
-    immediate: !showAnimation,
-  });
-
-  const props5 = useSpring({
-    opacity: isVisible ? 1 : 0,
-    transform: isVisible ? 'translateX(0px)' : 'translateX(-100px)',
-    fontSize: 10,
-    config: { tension: 400, friction: 20 },
-    delay: showAnimation ? 4000 : 0,
-    immediate: !showAnimation,
-  });
+  const { props1, props2, props3, props4, props5 } = useAnimation();
 
   return (
     <div className="index-component">

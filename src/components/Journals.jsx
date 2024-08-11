@@ -2,14 +2,12 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { animated } from '@react-spring/web';
 import getJournals from '../firebase';
+import useJournalsAnimation from '../hooks/useJournalsAnimation';
+
 import '../styles/Journals.css';
 
 function Journals() {
   const [journals, setJournals] = useState([]);
-  const [isVisible, setIsVisible] = useState(false);
-
-  const showAnimation =
-    sessionStorage.getItem('show_journal_animation') !== '1';
 
   useEffect(() => {
     const fetchJournals = async () => {
@@ -17,7 +15,6 @@ function Journals() {
         const journalsData = await getJournals();
         journalsData.sort((a, b) => new Date(b.date) - new Date(a.date));
         setJournals(journalsData);
-        setIsVisible(true);
       } catch (error) {
         console.error(error.message);
       }
@@ -25,26 +22,7 @@ function Journals() {
     fetchJournals();
   }, []);
 
-  useEffect(() => {
-    if (isVisible && journals.length > 0) {
-      let totalDelay = 0;
-
-      journals.forEach((j, index) => {
-        setTimeout(
-          () => {
-            setIsVisible((prev) => ({ ...prev, [index]: true }));
-          },
-          showAnimation ? 4800 + index * 200 : 0
-        );
-
-        totalDelay = showAnimation ? 4800 + (index + 1) * 200 : 0;
-      });
-
-      setTimeout(() => {
-        sessionStorage.setItem('show_journal_animation', '1');
-      }, totalDelay);
-    }
-  });
+  const animationStyles = useJournalsAnimation(journals);
 
   return (
     <>
@@ -53,13 +31,7 @@ function Journals() {
           <animated.div
             className="journal"
             title={`take me to ${journal.name}`}
-            style={{
-              opacity: isVisible[index] ? 1 : 0,
-              transform: isVisible[index]
-                ? 'translateY(0px)'
-                : 'translateY(600px)',
-              transition: 'opacity 0.5s, transform 0.5s',
-            }}
+            style={animationStyles[index]}
           >
             <img src={journal.thumb} alt={`${journal.name} thumbnail`} />
             <h5>{journal.name}</h5>
