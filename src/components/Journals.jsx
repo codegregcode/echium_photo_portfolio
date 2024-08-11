@@ -1,27 +1,13 @@
-import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { animated } from '@react-spring/web';
-import getJournals from '../firebase';
+
+import useFetchJournals from '../hooks/useFetchJournals';
 import useJournalsAnimation from '../hooks/useJournalsAnimation';
 
 import '../styles/Journals.css';
 
 function Journals() {
-  const [journals, setJournals] = useState([]);
-
-  useEffect(() => {
-    const fetchJournals = async () => {
-      try {
-        const journalsData = await getJournals();
-        journalsData.sort((a, b) => new Date(b.date) - new Date(a.date));
-        setJournals(journalsData);
-      } catch (error) {
-        console.error(error.message);
-      }
-    };
-    fetchJournals();
-  }, []);
-
+  const journals = useFetchJournals();
   const animationStyles = useJournalsAnimation(journals);
 
   return (
